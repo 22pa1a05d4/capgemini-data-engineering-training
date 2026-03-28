@@ -1,0 +1,14 @@
+print("1. All Customers:")
+customers.show()
+
+print("2. Customers from Chennai:")
+customers.filter(customers.city == "Chennai").show()
+
+print("3. Customers with age > 25:")
+customers.filter(customers.age > 25).show()
+
+print("4. Customer Name and City:")
+customers.select("customer_name", "city").show()
+
+print("5. Customer count by city:")
+customers.groupBy("city").count().show()
